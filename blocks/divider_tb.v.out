@@ -1,0 +1,100 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002a9c6475c50 .scope module, "TestbenchDivider" "TestbenchDivider" 2 5;
+ .timescale -9 -9;
+v000002a9c64cc220_0 .var "A", 3 0;
+v000002a9c64cbb40_0 .var "B", 3 0;
+v000002a9c64cb460_0 .net "Quotient", 3 0, L_000002a9c64cb320;  1 drivers
+v000002a9c64cc4a0_0 .net "Remainder", 3 0, L_000002a9c64cb3c0;  1 drivers
+S_000002a9c6475de0 .scope module, "divider" "Divider4Bit" 2 12, 3 1 0, S_000002a9c6475c50;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 4 "A";
+    .port_info 1 /INPUT 4 "B";
+    .port_info 2 /OUTPUT 4 "Quotient";
+    .port_info 3 /OUTPUT 4 "Remainder";
+v000002a9c6442f50_0 .net "A", 3 0, v000002a9c64cc220_0;  1 drivers
+v000002a9c64c26c0_0 .net "B", 3 0, v000002a9c64cbb40_0;  1 drivers
+v000002a9c64c2f80_0 .net "Quotient", 3 0, L_000002a9c64cb320;  alias, 1 drivers
+v000002a9c64c2800_0 .net "Remainder", 3 0, L_000002a9c64cb3c0;  alias, 1 drivers
+v000002a9c64c2440_0 .net *"_ivl_0", 31 0, L_000002a9c64cc2c0;  1 drivers
+L_000002a9c64cd0f8 .functor BUFT 1, C4<0000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000002a9c64c2760_0 .net *"_ivl_11", 27 0, L_000002a9c64cd0f8;  1 drivers
+v000002a9c64c2080_0 .net *"_ivl_12", 31 0, L_000002a9c64cb1e0;  1 drivers
+L_000002a9c64cd140 .functor BUFT 1, C4<0000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000002a9c64c2b20_0 .net *"_ivl_15", 27 0, L_000002a9c64cd140;  1 drivers
+v000002a9c64c2260_0 .net *"_ivl_16", 31 0, L_000002a9c64cca40;  1 drivers
+L_000002a9c64cd188 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000002a9c64c2c60_0 .net/2u *"_ivl_18", 31 0, L_000002a9c64cd188;  1 drivers
+v000002a9c64c28a0_0 .net *"_ivl_20", 31 0, L_000002a9c64cc900;  1 drivers
+v000002a9c64c2a80_0 .net *"_ivl_24", 31 0, L_000002a9c64cc5e0;  1 drivers
+L_000002a9c64cd1d0 .functor BUFT 1, C4<0000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000002a9c64c2d00_0 .net *"_ivl_27", 27 0, L_000002a9c64cd1d0;  1 drivers
+L_000002a9c64cd218 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000002a9c64c29e0_0 .net/2u *"_ivl_28", 31 0, L_000002a9c64cd218;  1 drivers
+L_000002a9c64cd068 .functor BUFT 1, C4<0000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000002a9c64c2da0_0 .net *"_ivl_3", 27 0, L_000002a9c64cd068;  1 drivers
+v000002a9c64c2620_0 .net *"_ivl_30", 0 0, L_000002a9c64cb280;  1 drivers
+v000002a9c64c2e40_0 .net *"_ivl_32", 31 0, L_000002a9c64cb960;  1 drivers
+L_000002a9c64cd260 .functor BUFT 1, C4<0000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000002a9c64c2ee0_0 .net *"_ivl_35", 27 0, L_000002a9c64cd260;  1 drivers
+v000002a9c64c2120_0 .net *"_ivl_36", 31 0, L_000002a9c64cb820;  1 drivers
+L_000002a9c64cd2a8 .functor BUFT 1, C4<0000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000002a9c64c21c0_0 .net *"_ivl_39", 27 0, L_000002a9c64cd2a8;  1 drivers
+L_000002a9c64cd0b0 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000002a9c64c2940_0 .net/2u *"_ivl_4", 31 0, L_000002a9c64cd0b0;  1 drivers
+v000002a9c64c2300_0 .net *"_ivl_40", 31 0, L_000002a9c64cc9a0;  1 drivers
+L_000002a9c64cd2f0 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000002a9c64c23a0_0 .net/2u *"_ivl_42", 31 0, L_000002a9c64cd2f0;  1 drivers
+v000002a9c64c24e0_0 .net *"_ivl_44", 31 0, L_000002a9c64ccf40;  1 drivers
+v000002a9c64c2580_0 .net *"_ivl_6", 0 0, L_000002a9c64ccea0;  1 drivers
+v000002a9c64c2bc0_0 .net *"_ivl_8", 31 0, L_000002a9c64cb140;  1 drivers
+L_000002a9c64cc2c0 .concat [ 4 28 0 0], v000002a9c64cbb40_0, L_000002a9c64cd068;
+L_000002a9c64ccea0 .cmp/ne 32, L_000002a9c64cc2c0, L_000002a9c64cd0b0;
+L_000002a9c64cb140 .concat [ 4 28 0 0], v000002a9c64cc220_0, L_000002a9c64cd0f8;
+L_000002a9c64cb1e0 .concat [ 4 28 0 0], v000002a9c64cbb40_0, L_000002a9c64cd140;
+L_000002a9c64cca40 .arith/div 32, L_000002a9c64cb140, L_000002a9c64cb1e0;
+L_000002a9c64cc900 .functor MUXZ 32, L_000002a9c64cd188, L_000002a9c64cca40, L_000002a9c64ccea0, C4<>;
+L_000002a9c64cb320 .part L_000002a9c64cc900, 0, 4;
+L_000002a9c64cc5e0 .concat [ 4 28 0 0], v000002a9c64cbb40_0, L_000002a9c64cd1d0;
+L_000002a9c64cb280 .cmp/ne 32, L_000002a9c64cc5e0, L_000002a9c64cd218;
+L_000002a9c64cb960 .concat [ 4 28 0 0], v000002a9c64cc220_0, L_000002a9c64cd260;
+L_000002a9c64cb820 .concat [ 4 28 0 0], v000002a9c64cbb40_0, L_000002a9c64cd2a8;
+L_000002a9c64cc9a0 .arith/mod 32, L_000002a9c64cb960, L_000002a9c64cb820;
+L_000002a9c64ccf40 .functor MUXZ 32, L_000002a9c64cd2f0, L_000002a9c64cc9a0, L_000002a9c64cb280, C4<>;
+L_000002a9c64cb3c0 .part L_000002a9c64ccf40, 0, 4;
+    .scope S_000002a9c6475c50;
+T_0 ;
+    %pushi/vec4 8, 0, 4;
+    %store/vec4 v000002a9c64cc220_0, 0, 4;
+    %pushi/vec4 2, 0, 4;
+    %store/vec4 v000002a9c64cbb40_0, 0, 4;
+    %delay 10, 0;
+    %vpi_call 2 24 "$display", "A = %b, B = %b, Quotient = %b, Remainder = %b", v000002a9c64cc220_0, v000002a9c64cbb40_0, v000002a9c64cb460_0, v000002a9c64cc4a0_0 {0 0 0};
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v000002a9c64cc220_0, 0, 4;
+    %pushi/vec4 3, 0, 4;
+    %store/vec4 v000002a9c64cbb40_0, 0, 4;
+    %delay 10, 0;
+    %vpi_call 2 30 "$display", "A = %b, B = %b, Quotient = %b, Remainder = %b", v000002a9c64cc220_0, v000002a9c64cbb40_0, v000002a9c64cb460_0, v000002a9c64cc4a0_0 {0 0 0};
+    %pushi/vec4 15, 0, 4;
+    %store/vec4 v000002a9c64cc220_0, 0, 4;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v000002a9c64cbb40_0, 0, 4;
+    %delay 10, 0;
+    %vpi_call 2 36 "$display", "A = %b, B = %b, Quotient = %b, Remainder = %b", v000002a9c64cc220_0, v000002a9c64cbb40_0, v000002a9c64cb460_0, v000002a9c64cc4a0_0 {0 0 0};
+    %vpi_call 2 39 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "divider_tb.v";
+    "./divider.v";
